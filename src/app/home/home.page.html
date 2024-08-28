@@ -1,20 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>AppControl</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="card-container">
+    <ion-card (click)="sendCommand('Nyalakan Lampu Merah')">
+      <ion-card-header>
+        <ion-card-title>Nyalakan Lampu Merah</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+    
+    <ion-card (click)="sendCommand('Nyalakan Lampu Hijau')">
+      <ion-card-header>
+        <ion-card-title>Nyalakan Lampu Hijau</ion-card-title>
+      </ion-card-header>
+    </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-card (click)="sendCommand('Nyalakan Lampu Biru')">
+      <ion-card-header>
+        <ion-card-title>Nyalakan Lampu Biru</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card (click)="sendCommand('Matikan Lampu')">
+      <ion-card-header>
+        <ion-card-title>Matikan Lampu</ion-card-title>
+      </ion-card-header>
+    </ion-card>
   </div>
 </ion-content>
